@@ -1,0 +1,26 @@
+/*
+Template Name: TechPortfolio - Tailwind CSS Gallery Portfolio Template
+Version: 1.0
+Author: Techzaa
+File: Main Css File
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Custom
+@import "components/reboot";
+@import "components/navbar";
+
+// Gallery Demo
+.filter-options li a {
+    @apply text-gray-600 px-4 py-1.5 rounded border border-gray-300 flex items-center justify-center text-sm transition-all duration-500;
+}
+
+.filter-options li:hover a,
+.filter-options li.active a,
+.filter-options li:active a,
+.filter-options li:focus a {
+    @apply bg-blue-500 text-white border-transparent border;
+}
